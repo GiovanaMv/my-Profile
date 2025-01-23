@@ -11,8 +11,24 @@
   font-family: 'Roboto', sans-serif;
 }
 body {
-  background-color: #34005f;
-  color: #ebebeb;
+  background: radial-gradient(circle, #a81eb4, #20c1d6, #ffa46f);
+  background-size: 200% 200%;
+  animation: gradientAnimation 6s ease infinite;
+  color: #ffffff;
+}
+#tituloszinhos {
+  color: #d3ff91;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 header {
   padding-bottom: 25px;
@@ -38,7 +54,6 @@ li {
   margin-bottom: 10px;
 }
 .profile-bio-subtitle {
-  font-size: 20px;
   margin-bottom: 10px;
 }
 .profile-bio-description {
@@ -87,18 +102,19 @@ li {
 }
 .projects-list-item a {
   text-decoration: none;
-  background-color: #40d9ff;
+  background-color: #FF6F91;
   display: block;
   padding: 16px 20px;
   margin-bottom: 16px;
   text-align: center;
-  color: #9e1a9e;
+  color: #ffffff;
   font-weight: bold;
   border-radius: 30px;
-  border: solid 2px #40d9ff;
   transition: all ease 0.3s;
 }
 .projects-list-item a:hover {
-  color: #40d9ff;
+  color: #ffffff;
   background-color: transparent;
+  font-weight: bold;
+  border-radius: 30px;
 }
