@@ -2,8 +2,8 @@
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width:768px) and (max-width: 1023px)";
 
-.margBttm {margin-bottom: 8px;}
-.fontSize { font-size: 15px;}
+.margBttm {margin-bottom: 10px;}
+.fontSize { font-size: 20px;}
 
 *{
     margin: 0;
@@ -22,7 +22,12 @@ header {
         display: block;
         margin: 0 auto 24px;
         border-radius: 50%;
+        width: 190px;
+        margin-top: 50px;
     }
+}
+#tituloszinhos{
+    text-align: center;
 }
 li {
     list-style: none;
@@ -30,21 +35,24 @@ li {
 .profile-bio {
     text-align: center;
     &-name {
-        font-size: 20px; .margBttm();
+        font-size: 30px; .margBttm();
     }
     &-subtitle {
         .fontSize(); .margBttm();
     }
     &-description{
-        .fontSize();
-        opacity: 0.7;
+        font-size: 15x;
+        opacity: 0.8;
+        text-align: justify;
+        margin: 10px;
+        margin-top: 20px;
     }
 }
 .container {
     max-width: 960px;
     width: 80%;
     margin: 0 auto;
-    height: 100vh;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,6 +81,7 @@ li {
     }
 }
 .projects-list {
+    margin: 50px;
     &-item {
         margin-top: 20px;
         a{
