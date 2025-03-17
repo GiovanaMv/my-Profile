@@ -110,11 +110,9 @@ li {
   color: #ffffff;
   font-weight: bold;
   border-radius: 30px;
-  transition: all ease 0.3s;
 }
 .projects-list-item a:hover {
   color: #ffffff;
   background-color: transparent;
-  font-weight: bold;
-  border-radius: 30px;
+  border: 2px solid #FF6F91;
 }
